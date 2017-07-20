@@ -1,0 +1,252 @@
+.view-client-top{
+	padding:15px;
+	display: flex;
+	align-items: center;
+	overflow: auto;
+}
+.view-client-title{
+	font-size:20pt;
+	color:#469df5;
+	text-align: left;
+}
+.view-client-logo-container{
+	max-height: 250px;
+	width:250px;
+	position: relative;
+	padding:25px;
+	float: left;
+}
+.view-client-logo-img{
+	width:200px;
+	height: 200px;
+	background-image: url(../images/Muscle-Maker-Grill-logo.jpeg);
+	background-size: cover;
+	background-position: center center;
+	border-radius: 100%;
+	position: relative;
+}
+
+.change-logo-btn{
+	opacity: 0;
+    position: relative;
+    /* left: 36px; */
+    /* top: 115px; */
+    width: 100%;
+    padding: 7px 25px;
+    border-radius: 5px;
+    background: #f7f7f7;
+    border: solid 1px #e0e0e0;
+    margin-top: -20px;
+    display: inline-block;
+    font-size: 10pt;
+    color: #252525;
+    -webkit-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+    cursor: pointer;
+}
+.change-logo-btn input{
+	position: absolute;
+	top:0;
+	left: 0;
+	width:100%;
+	height:100%;
+	cursor: pointer;
+}
+.view-client-logo-container:hover .change-logo-btn{
+	opacity: 1;
+}
+.change-logo-btn:hover{
+	background:#eee;
+	cursor: pointer;
+	color:#000;
+}
+.client-details{
+	flex:1;
+}
+.details-container{
+	
+}
+.client-details{
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+	box-sizing: border-box;
+	width:100%;
+	margin-top: 25px;
+}
+.field-container{
+	display: flex;
+	width:100%;
+	position: relative;
+	background:#f9f9f9;
+	padding:10px;
+	justify-content: space-between;
+	align-items: center;
+	color:#3E5F77;
+	font-size:12pt;
+	border-bottom:solid 1px #e0e0e0;
+}
+.field-container:hover{
+	background:#f1f1f1;
+}
+.field-header{
+	padding:10px;
+	text-align: left;
+	font-size: 13pt;
+	background:#469df5;
+	color:#fff;
+}
+.field-value{
+	color:#3E5F77;
+	font-size: 12pt;
+}
+.client-contacts{
+	width:100%;
+	box-sizing: border-box;
+	margin-top: 25px;
+    background: #f5f5f5;
+}
+.client-contact-header{
+	font-size:12pt;
+	color:#000;
+	padding:10px;
+	padding-left:15px;
+	text-align: left;
+}
+.client-contact-item{
+	text-align: left;
+	
+	padding:15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.client-contact-item:hover{
+	background:#f7f7f7;
+}
+.client-contact-desc{
+	font-size:12pt;
+	color:#3E5f77;
+}
+.client-contact-icons i{
+	font-size: 15pt;
+	color:#e0e0e0;
+	margin-left:15px;
+}
+.client-contact-icons i:hover{
+	cursor: pointer;
+	color:#252525;
+}
+.client-contact-icons i.fa-times-rectangle:hover{
+	color:#F15053;
+}
+.saved-locations-container{
+	margin-top:25px;
+	/*box-shadow: 1px 1px 3px rgba(0,0,0,0.2);*/
+	
+}
+.saved-locations-header{
+	padding:15px 0px;
+	color:#000;
+	font-size: 12pt;
+	text-align: left;
+	
+}
+.saved-location-item{
+	overflow: auto;
+	text-align: left;
+	display: flex;
+	align-items: center;
+	background:#f7f7f7;
+	border-bottom: solid 1px #e0e0e0;
+}
+.saved-location-item i{
+	margin-left: auto;
+	font-size:35pt;
+	color:#e0e0e0;
+	margin-right:25px;
+}
+.saved-location-item:hover{
+	cursor: pointer;
+	background:#f1f1f1;
+}
+.saved-location-item:hover i{
+	color:#469df5;
+}
+.saved-location-img{
+	background-image: url(../images/1-Building-KYB.jpg);
+	background-size: cover;
+	background-position: center;
+	height:100px;
+	width:100px;
+	float:left;
+	margin-right:15px;
+}
+.saved-location-title{
+	font-size:14pt;
+	color:#3E5f77;
+}
+.client-contact-create{
+	padding:15px;
+}
+.client-contact-create:hover{
+	background:#f7f7f7;
+	cursor: pointer;
+}
+.client-contact-create:active{
+	background:#f1f1f1;
+}
+.client-contact-create-title{
+	font-size:10pt;
+	color:#3080e8;
+}
+.overlay{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.create-client-contact-popup{
+	overflow: auto;
+	width:500px;
+
+	background:#fff;
+	border-radius: 3px;
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+.client-contact-input-container{
+	padding:15px;
+}
+.label-icon{
+	position: absolute;
+	margin-top:7px;
+	margin-left: 10px;
+	color:#d1d1d1;
+}
+
+.form-control{
+	box-shadow: none !important;
+}
+.save-client-btn{
+	background:#3080e8;
+	color:#fff;
+	font-size: 10pt;
+	padding:10px 15px;
+	border-radius: 3px;
+	margin-bottom:15px;
+	display: inline-block;
+	margin-left: 10px;
+	float:right;
+}
+.save-client-btn:hover{
+	background:#469df5;
+	cursor:pointer;
+}
+.edit-profile-btn-container{
+	text-align: right;
+    padding: 0;
+	margin-top: -2px;
+    background: #fff;
+    border-radius: 5px;
+	font-size: 12pt;
+}
+.edit-profile-btn-container .load-more-btn{
+	padding:3px 15px;
+}

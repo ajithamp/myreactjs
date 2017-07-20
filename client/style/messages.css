@@ -1,0 +1,364 @@
+.search-messages{
+	position:relative;
+	clear:both;
+}
+.search-messages input{
+	background: #ffffff;
+    border: solid 1px #e0e0e0;
+    border-radius: 5px;
+    width: 100%;
+    padding: 3px 10px;
+    line-height: 15pt;
+    font-size: 10pt;
+    color: #606060;
+    text-align: left;
+    padding-left: 25px
+}
+.conversation-list{
+	margin-top:10px;
+}
+.conversation-item{
+
+	margin: 0px -15px;
+    padding: 15px 15px;
+	font-size:10pt;
+	color:#606060;
+	overflow:auto;
+	position:relative;
+	display: flex;
+	align-items: center;
+}
+.conversation-item.active{
+	background: #f3f8fd;
+
+}
+.conversation-item:hover{
+	background:#F6FBFF;
+	cursor:pointer;
+
+}
+.conversation-item:hover .conversation-close{
+	opacity:1;
+}
+.conversation-close{
+	opacity:0;
+	position: absolute;
+
+    right: 10px;
+    font-size: 10pt;
+    color: #606060;
+    clear: both;
+    margin-left: auto;
+}
+.conversation-close:hover{
+	cursor:pointer;
+	color:#3080e8;
+}
+.conversation-item:hover .conversation-title{
+	color:#3080e8 !important;
+}
+.conversation-img{
+	height:40px;
+	width:40px;
+	margin-right:10px;
+	background-image:url(../images/guy.jpg);
+	background-size:cover;
+	background-position:center;
+	border-radius:100px;
+	float:left;
+
+}
+.conversation-title{
+	font-size:10pt;
+	color:#000;
+	font-weight:bold;
+	float:left;
+
+	width:67%;
+}
+.conversation-time{
+	float:right;
+	font-size:8pt;
+	padding-top:2px;
+}
+.conversation-preview{
+	font-size:10pt;
+	color:#9E9E9E;
+	float:left;
+	max-width:75%;
+}
+.conversation-container{
+	margin-top:15px;
+	margin-left: -10px;
+    margin-right: -10px;
+    padding: 0px 10px;
+	overflow:auto;
+	text-align:left;
+	height:375px;
+}
+.conversation-inner-title{
+	color:#606060;
+	font-size:15pt;
+	margin-bottom:10px;
+	text-align:left;
+}
+.message{
+	width:100%;
+	display:flex;
+	align-items: top;
+}
+.message-img{
+	height:40px;
+	width:40px;
+	background-image:url(../images/guy.jpg);
+	background-size:cover;
+	border-radius:100px;
+	margin-right:10px;
+}
+.message-body{
+	padding:10px;
+	flex:1;
+}
+.unread-checker{
+	color:#3080e8;
+	margin-right: 10px;
+	display: inline-block;
+}
+.message-sender{
+	font-size:12pt;
+	color:#000;
+	font-weight:normal;
+	float: left;
+	margin-bottom:10px;
+
+}
+.message-timestamp{
+	float:right;
+	color:#999;
+}
+.message-details span{
+	font-size:8pt;
+	font-weight:normal;
+	display:inline-block;
+	color:#868686;
+}
+.message-content{
+	margin-top:10px;
+	font-size:10pt;
+	color:#606060;
+	clear:both;
+}
+.message-details{
+	overflow:auto;
+	line-height:30px;
+}
+.reply-container{
+	border-radius: 3px;
+	width:100%;
+	margin-top:15px;
+}
+
+.send-reply-btn{
+	background: #3080e8;
+    border-radius: 4px;
+    color: #fff;
+    width: 10%;
+    font-size: 10pt;
+    float: right;
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 0;
+    line-height: 30px;
+    transition: all .3s ease;
+}
+.send-reply-btn:hover{
+	background:#1F88F2;
+	cursor:pointer;
+}
+
+/*Calendar*/
+.date-badge{
+	float: left;
+    margin-right: 10px;
+    align-content: center;
+    margin-top: 0px;
+    color: #606060;
+    background: #3080e8;
+    padding: 3px 5px;
+    border-radius: 4px;
+    color: #fff
+}
+.calendar-container{
+	margin-top:15px;
+	position: relative;
+	padding:15px;
+	box-sizing:border-box;
+}
+.calendar-day{
+	min-height:100px;
+	border:solid 1px #BCBCBC;
+	border-radius: 5px;
+	margin-right:5px;
+	margin-bottom:5px;
+	width:13%;
+	padding:5px;
+	box-sizing: border-box;
+	float:left;
+	color:#606060;
+	font-size:10pt;
+	text-align: left;
+	transition:all .3s ease;
+}
+.calendar-day:hover{
+	border-color:#3080e8;
+	background:#E9F0F8;
+}
+.calendar-day.today{
+	border-color:#3080e8;
+	background:#E9F0F8;
+	color:#3080e8;
+}
+.calendar-day span{
+	display: inline-block;
+	float:right;
+	color:#3080e8;
+	font-size:10pt;
+	padding:1px 0px;
+	width:100%;
+}
+.calendar-day span:hover{
+	color:#3080e8;
+	cursor: pointer;
+}
+.calendar-time-frame{
+	float:left;
+	width:100%;
+	margin-bottom:10px;
+	margin-top:10px;
+}
+.calendar-time-tab{
+	float:left;
+	padding:5px 10px;
+	margin-right:5px;
+	border-radius: 5px;
+	background:#f1f1f1;
+	color:#606060;
+	transition:all .3s ease;
+}
+.calendar-time-tab:hover{
+	background:#e1e1e1;
+	cursor: pointer;
+}
+.calendar-time-tab.active{
+	background:#3080e8;
+	color:#fff;
+}
+.calendar-title{
+	display:inline-block;
+	font-size:16pt;
+	color:#606060;
+	margin-bottom:15px;
+}
+.calendar-title i{
+	margin-left:40px;
+	margin-right:40px;
+	font-size:10pt;
+}
+
+.reply-text-area{
+	height:100px;
+
+	border-radius: 5px;
+}
+.reply-text-area textarea{
+	font-weight: lighter;
+	width:100%;
+	height:100%;
+	border:none;
+	padding:15px;
+	font-size: 10pt;
+	color:#252525;
+	border: solid 1px #ccc;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	transition: border-color .3s ease;
+}
+.reply-text-area textarea:focus{
+	border-color:#252525;
+}
+.reply-bottom{
+	padding:10px;
+	display: flex;
+	align-items: center;
+	border: solid 1px #ccc;
+	border-top:0;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+.reply-title{
+	margin-bottom:5px;
+	text-align: left;
+}
+.add-property-item{
+	display:flex;
+	align-items: center;
+}
+.add-property-img{
+	background-size:cover;
+	height:100px;
+	width:100px;
+}
+.add-property-title{
+	margin-left: 15px;
+	color:#252525;
+	font-size:13pt;
+}
+.add-property-item:hover{
+	background:#eaeaea;
+	cursor: pointer;
+}
+.added-property{
+	display: flex;
+	align-items: center;
+	margin-bottom:10px;
+	border:solid 1px #aeaeae;
+	padding:15px;
+	border-radius: 3px;
+}
+.added-property-img{
+	height:100px;
+	width:100px;
+	background-size: cover;
+}
+.added-property-name{
+	margin-left:15px;
+	font-size: 13pt;
+	color:#252525;
+}
+.remove-added-property{
+	margin-left: auto;
+	color:#e0e0e0;
+}
+.remove-added-property:hover{
+	color:#000;
+	cursor: pointer;
+}
+.added-property-mini{
+	display: flex;
+	align-items: center;
+	width:200px;
+	padding:10px;
+	margin-top:15px;
+	border:solid 1px #eaeaea;
+	border-radius: 3px;
+}
+.added-property-mini-img{
+	height: 40px;
+	width:40px;
+	background-size: cover;
+}
+.added-property-mini-title{
+	font-size:10pt;
+	color:#252525;
+	margin-left: 15px;
+}
